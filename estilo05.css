@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.conteiner{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100vh;
+    grid-template-areas:
+    "h l n "
+}
+header{
+    grid-area: h;
+    background-color: rgb(90, 89, 89);
+    background-image: url(Rectangle\ 40.png);
+    background-repeat: no-repeat;
+    height: 733px;
+}
+main{
+    grid-area: l;
+    background-color: rgb(255, 230, 0);
+    display: flex;
+    flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   row-gap: 100px;
+}
+section{
+    grid-area: n;
+    background-color: rgb(112, 112, 112);
+    background-image: url(Rectangle\ 40.png);
+    background-repeat: no-repeat;
+    height: 733px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+form > input{
+    border-radius: 20px;
+    box-shadow: gray 3px 3px ;
+    width: 400px;
+    height: 30px;
+}
+
+input[type="text"]{
+    height: 150px;
+    display: flex;
+    text-align:justify
+}
+
+main > h2{
+    padding: 40px;
+    font: weight 100px;
+}
+form > a{
+    margin: 0 auto;
+    color: black;
+    text-decoration: none;
+    background-color: rgb(120, 115, 115);
+    border-radius: 20px;
+    width: 90px;
+    height: 30px;
+    text-align: center; 
+}
+
+
+
+
+
+    

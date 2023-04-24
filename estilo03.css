@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.conteiner{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100vh;
+    grid-template-areas:
+    "m l n "
+}
+main{
+    grid-area: m;
+    background-color:grey;
+    background-image: url(Rectangle\ 40.png);
+    background-repeat: no-repeat;
+    height: 733px;
+   
+
+}
+aside{
+    grid-area: l;
+    background-color: rgb(255, 230, 0);
+    display: flex;
+    flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   row-gap: 80px;
+}
+nav{
+    grid-area: n;
+    background-color: rgb(112, 112, 112);
+    background-image: url(Rectangle\ 40.png);
+    background-repeat: no-repeat;
+    height: 733px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+aside> h1{
+    padding: 10px;
+    font: weight 100px;
+ }
+ form>input{
+    border-radius: 20px;
+    box-shadow: gray 3px 3px 5px;
+    width: 400px;
+    height: 30px;
+}
+.entrar{
+    margin: 0 auto;
+   width: 90px;
+   background-color: rgb(140, 139, 139);
+   color: rgb(0, 0, 0);
+   border-radius: 20px;
+   padding: 6px;
+   text-decoration: none;
+   text-align: center;
+   
+}
