@@ -27,7 +27,7 @@ main{
 }
 section{
     grid-area: n;
-    background-color: rgb(112, 112, 112);
+    background-color: rgb(128, 124, 124);
     background-image: url(Rectangle\ 40.png);
     background-repeat: no-repeat;
     height: 733px;
@@ -39,28 +39,42 @@ form{
 }
 form > input{
     border-radius: 20px;
-    box-shadow: gray 3px 3px ;
+    box-shadow: rgb(100, 95, 95) 3px 3px ;
     width: 400px;
     height: 30px;
 }
+textarea {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: rgb(100, 95, 95) 4px 4px ;
+    width: 400px;
+    height: 200px;
+}
 
 input[type="text"]{
-    height: 150px;
+    height: 30px;
     display: flex;
     text-align:justify
 }
 
 main > h2{
-    padding: 40px;
+    padding: 30px;
     font: weight 100px;
 }
 form > a{
     margin: 0 auto;
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    background-color: rgb(120, 115, 115);
+    background-color: rgb(85, 85, 85);
     border-radius: 20px;
     width: 90px;
+    height: 30px;
+    text-align: center; 
+}
+button{
+ background-color: rgb(255, 230, 0);
+ border-radius: 20px;
+    width: 400px;
     height: 30px;
     text-align: center; 
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cadastro</title>
-    <link rel="stylesheet" href="estilo05.css">
+    <link rel="stylesheet" href="catalogar.css">
 </head>
 <body>
   <div class="conteiner">
@@ -14,17 +14,25 @@
     </header>
     <main>
       <h2>Catalogar</h2>
-            <form action="#">
-                <label for="#">Nome</label>
-                <input type="nome" name="nome" id="">  
-                <label for="#">Resumo</label>
-                <input type="text" name="resumo" id=""> 
-                <a href="catalogo.html" class="confirmar">Confirmar</a>
-            </form>
+      <div class="cadmodal">
+        <div class="modal">
+        <form action="" id="formulario">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+            <label for="foto">Foto</label>
+            <input type="file" name="foto" id="foto">
+            <button href="catalogo.html" class="btncadastrar"> Cadastrar</button>
+            
+        </form>
+        <button  id="btnclose" onclick="fechar()" href="catalogo.html">Fechar</button>
+    </div>
     </main>
     <section>
 
     </section>
   </div>
+  <script src="catalogar.js"></script>
 </body>
 </html>

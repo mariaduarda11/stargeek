@@ -9,6 +9,14 @@ formulario.onsubmit = (evento) =>{
         if (element.email == email.value && element.senha == senha.value) {
             evento.preventDefault();
             mensagem.innerHTML = "Aguarde você será redirecionado..."
+
+            let dados = JSON.parse(sessionStorage.getItem("logado")) ||[];
+            dados.push(
+                {
+                    email:email.value
+                }
+            )
+            sessionStorage.setItem("logado",JSON.stringify(dados));
             setTimeout(()=>{
                 window.location.assign("catalogo.html")
             }, 3000)

@@ -55,7 +55,7 @@ section{
     margin-bottom: 20px;
 }
 .card{
-    box-shadow: gray 10px 10px 10px;
+    box-shadow: rgb(128, 128, 128) 10px 10px 10px;
     width: 300px;
     border-radius: 20px;
 }
@@ -73,9 +73,58 @@ section{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+
+.cards {
+    width: 100vw;
+    margin: 30px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card{
+    width: 300px;
+}
+
+.cardimagem img{
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    width: 300px;
+    height: 200px;
+}
+
+.cards img:hover{
+    opacity: 0.7;
+}
+
+.cardinfo {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.cardnome {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(219, 233, 30);
+    text-align: center;
+    margin-top: -5px;
+    padding: 20px;
+}
+
+.cardnome p{
+  font-size: 1rem;
+  font-weight: normal;
+}
+
 footer{
     background-color: black;
 }
+
 @media(max-width: 890px){
 
     .conteiner{
